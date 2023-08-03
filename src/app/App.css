@@ -1,0 +1,208 @@
+:root,
+[data-bs-theme='light'] {
+  accent-color: var(--bs-primary);
+
+  --bs-border-radius: 3px;
+
+  --bs-primary: #0000ff;
+  --bs-primary-rgb: 0, 0, 255;
+
+  --bs-light: #eeeeee;
+  --bs-light-rgb: 238, 238, 238;
+
+  --bs-link-color: #0000ff;
+  --bs-link-color-rgb: 0, 0, 255;
+}
+
+/* Button */
+.btn {
+  font-size: 0.75rem;
+  padding: 0.625rem 1.5rem;
+}
+
+.btn-sm {
+  padding: 0.375rem 1.75rem;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+}
+
+.btn-light {
+  --bs-btn-bg: #e9ecef;
+  --bs-btn-border-color: #e9ecef;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.15),
+    0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Controls */
+.form-control,
+.form-select {
+  font-size: 0.875rem;
+  height: 2.125rem;
+  min-height: 2.125rem;
+  line-height: 1.25;
+}
+
+.form-control::placeholder,
+.form-floating > label {
+  color: var(--bs-secondary);
+}
+
+.form-floating > .form-control[required] ~ label::before,
+.form-floating > .form-select[required] ~ label::before,
+.form-label[aria-required]::before {
+  opacity: 0;
+  content: '* ';
+  color: var(--bs-form-invalid-color);
+  transition: opacity 0.1s ease-in-out;
+}
+
+.form-label[aria-required]::before {
+  opacity: 1;
+}
+
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+  color: var(--bs-secondary);
+}
+
+.form-floating > label {
+  padding: 0.375rem 0.125rem;
+  margin: 0 0.625rem;
+  font-size: 0.875rem;
+  background: transparent;
+  line-height: 1rem;
+  height: calc(100% - (var(--bs-border-width) * 6));
+  top: calc(var(--bs-border-width) * 3);
+  left: var(--bs-border-width);
+  color: transparent;
+}
+
+.form-floating > .form-control-plaintext:focus,
+.form-floating > .form-control-plaintext:not(:placeholder-shown),
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+  color: transparent;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+  padding: 0.375rem 0.75rem;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext,
+.form-floating > .form-select {
+  height: 2.125rem;
+  min-height: 2.125rem;
+  line-height: 1.25;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 1;
+  transform: translateY(-1rem) translateX(-0.675rem) translateX(0.075rem) scale(0.8);
+  color: var(--bs-secondary);
+  background: var(--bs-body-bg);
+}
+
+.form-floating > .form-control:focus ~ label::before,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::before,
+.form-floating > .form-select ~ label::before {
+  opacity: 1;
+}
+
+.col-form-label {
+  font-size: 0.875rem;
+}
+
+/* Accordion */
+.accordion-item {
+  --bs-accordion-btn-icon-width: 0.75rem;
+  background: var(--bs-body-bg);
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  z-index: auto;
+}
+
+.accordion-button:focus {
+  z-index: auto;
+  border-color: none;
+  outline: 3px solid var(--bs-accordion-btn-focus-border-color);
+  outline-offset: -3px;
+  box-shadow: none;
+}
+
+.accordion-item:first-of-type .accordion-button,
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 0;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  padding: 0.75rem 1rem;
+  background: var(--bs-light);
+  color: var(--bs-dark);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15)) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
+}
+
+/* Nav */
+.nav-pills {
+  --bs-nav-pills-link-active-bg: var(--bs-primary);
+  --bs-nav-link-color: var(--bs-secondary);
+  --bs-nav-link-padding-x: 1.125rem;
+  --bs-nav-link-padding-y: 0.375rem;
+  background: var(--bs-light);
+  border-radius: var(--bs-border-radius);
+  padding: 0.5rem;
+}
+
+/* Toast */
+.toast {
+  border-radius: 0.375rem;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15)) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
+  animation: popIn 150ms ease-in;
+}
+
+@keyframes popIn {
+  from {
+    visibility: visible;
+    transform: translateY(150%) scale(0.75);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Table */
+.table {
+  font-size: 0.875rem;
+  --bs-table-color: var(--bs-dark);
+  --bs-table-striped-bg: rgb(242, 242, 242);
+  --bs-table-striped-color: var(--bs-dark);
+}
+
+.table th {
+  background: #4b515d;
+  color: var(--bs-white);
+  font-weight: 400;
+}

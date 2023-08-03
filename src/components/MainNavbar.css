@@ -1,0 +1,10 @@
+.navbar-nav.justify-content-end {
+  font-size: 0.875rem;
+}
+
+.navbar-toggler {
+  font-size: 0.75rem;
+  border: none;
+  padding: 0.25rem;
+  margin: 0 -0.25rem;
+}

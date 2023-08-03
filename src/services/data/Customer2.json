@@ -1,0 +1,71 @@
+{
+  "custInfo": {
+    "Id": 89,
+    "Fname": "jill",
+    "Mname": "",
+    "Lname": "rabbit",
+    "ssn": "",
+    "DobD": 0,
+    "DobM": 0,
+    "DobY": 0,
+    "Address": "1234 Test St",
+    "AptNumber": "",
+    "AptName": "",
+    "Aptcode": "",
+    "City": "Kingwood",
+    "State": "TEXAS",
+    "Zip": "77336",
+    "HPhone1": "456",
+    "HPhone2": "111",
+    "HPhone3": "1234",
+    "WPhone1": "",
+    "WPhone2": "",
+    "WPhone3": "",
+    "DlNumber": "",
+    "DlState": "",
+    "DlExp": "",
+    "Employer": "",
+    "Position": "",
+    "EmploymentYears": "",
+    "PreEmployer": "",
+    "PrePosition": "",
+    "PreEmploymentYears": "",
+    "MonthlyIncome": "",
+    "YearsAtHome": "",
+    "RentType": "",
+    "MonthlyPayment": "",
+    "MtgCmyName": "",
+    "HomeValue": "",
+    "ReferenceFname": "",
+    "ReferenceLname": "",
+    "ReferencePhone": "",
+    "ReferenceRelation": ""
+  },
+  "CoApp_CustInfo": null,
+  "sales": [
+    {
+      "id": 365,
+      "receiptNumber": 436,
+      "date": "6/14/2023",
+      "totalItems": 5,
+      "delived": 0,
+      "status": "Balance:$2088.24, Undelivered"
+    },
+    {
+      "id": 362,
+      "receiptNumber": 432,
+      "date": "5/2/2023",
+      "totalItems": 3,
+      "delived": 0,
+      "status": "Balance:$1137.14, Undelivered"
+    },
+    {
+      "id": 357,
+      "receiptNumber": 423,
+      "date": "5/2/2023",
+      "totalItems": 7,
+      "delived": 0,
+      "status": "All funds accounted for, Undelivered"
+    }
+  ]
+}

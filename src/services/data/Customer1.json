@@ -1,0 +1,70 @@
+{
+  "custInfo": {
+    "Id": 148,
+    "Fname": "John",
+    "Lname": "Doe",
+    "ssn": "",
+    "DobD": 15,
+    "DobM": 6,
+    "DobY": 1990,
+    "Address": "123 Main St",
+    "AptNumber": "Apt 4",
+    "AptName": "Sample Apartments",
+    "Aptcode": "12345",
+    "City": "New York",
+    "State": "NY",
+    "Zip": "10001",
+    "HPhone1": "555",
+    "HPhone2": "123",
+    "HPhone3": "4567",
+    "WPhone1": "555",
+    "WPhone2": "987",
+    "WPhone3": "6543",
+    "DlNumber": "xxxxxxx",
+    "DlState": "NY",
+    "DlExp": "2025-12-31",
+    "Employer": "XYZ Corporation",
+    "Position": "Software Engineer",
+    "EmploymentYears": "5",
+    "PreEmployer": "ABC Inc.",
+    "PrePosition": "Web Developer",
+    "PreEmploymentYears": "2",
+    "MonthlyIncome": "$5000",
+    "YearsAtHome": "3",
+    "RentType": "Rent",
+    "MonthlyPayment": "$1500",
+    "MtgCmyName": "ABC Mortgage",
+    "HomeValue": "150000",
+    "ReferenceFname": "Jane",
+    "ReferenceLname": "Smith",
+    "ReferencePhone": "555-789-1234",
+    "ReferenceRelation": "Project Coordinator"
+  },
+  "CoApp_CustInfo": null,
+  "sales": [
+    {
+      "id": 1,
+      "receiptNumber": 1001,
+      "date": "1/15/2020",
+      "totalItems": 5,
+      "delived": 0,
+      "status": "Balance:$2088.24, Undelivered"
+    },
+    {
+      "id": 2,
+      "receiptNumber": 1002,
+      "date": "1/15/2021",
+      "totalItems": 6,
+      "delived": 2,
+      "status": "Paid Off, Undelivered"
+    },
+    {
+      "id": 3,
+      "receiptNumber": 1003,
+      "date": "1/15/2022",
+      "totalItems": 2,
+      "delived": 0,
+      "status": "All funds accounted for, Undelivered"
+    }
+  ]
+}
